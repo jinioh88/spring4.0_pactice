@@ -10,7 +10,7 @@ public class AppJavaConfig {
         return new UserRepository();
     }
 
-    @Bean
+    @Bean(name = "lightweight")
     PasswordEncoder passwordEncoder() {
         return new PasswordEncoder();
     }
